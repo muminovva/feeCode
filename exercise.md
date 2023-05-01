@@ -63,35 +63,43 @@ Solution
 let catName = "Oliver";
 let catSound = "Meow!";
 ```
-[10.Add Two Numbers with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/add-two-numbers-with-javascript)
+[10.Declare a Read-Only Variable with the const Keyword](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/declare-a-read-only-variable-with-the-const-keyword)
+Solution
+```js
+const FCC = "freeCodeCamp"; // Change this line
+let fact = "is cool!"; // Change this line
+fact = "is awesome!";
+console.log(FCC, fact); // Change this line
+```
+[11.Add Two Numbers with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/add-two-numbers-with-javascript)
 Solution
 ```js
 const sum = 10 + 10;
 ```
-[11.Subtract One Number from Another with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/subtract-one-number-from-another-with-javascript)
+[12.Subtract One Number from Another with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/subtract-one-number-from-another-with-javascript)
 Solution
 ```js
 const difference = 45 - 33;
 ```
-[12.Multiply Two Numbers with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/multiply-two-numbers-with-javascript)
+[13.Multiply Two Numbers with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/multiply-two-numbers-with-javascript)
 Solution
 ```js
 const product = 8 * 10;
 ```
-[13.Divide One Number by Another with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/divide-one-number-by-another-with-javascript)
+[14.Divide One Number by Another with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/divide-one-number-by-another-with-javascript)
 Solution
 ```js
 const quotient = 66 / 33;
 ```
 
-[14.Increment a Number with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/increment-a-number-with-javascript)
+[15.Increment a Number with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/increment-a-number-with-javascript)
 Solution
 ```js
 let myVar = 87;
 myVar = ++myVar;
 ```
 
-[15.Decrement a Number with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/decrement-a-number-with-javascript)
+[16.Decrement a Number with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/decrement-a-number-with-javascript)
 Solution
 ```js
 let myVar = 11;
@@ -99,31 +107,31 @@ let myVar = 11;
 myVar = --myVar ;
 ```
 
-[16.Create Decimal Numbers with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/create-decimal-numbers-with-javascript)
+[17.Create Decimal Numbers with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/create-decimal-numbers-with-javascript)
 Solution
 ```js
 const myDecimal = 5.7;
 ```
 
-[17.Multiply Two Decimals with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/multiply-two-decimals-with-javascript)
+[18.Multiply Two Decimals with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/multiply-two-decimals-with-javascript)
 Solution
 ```js
 const product = 2.5 * 2;
 ```
 
-[18.Divide One Decimal by Another with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/divide-one-decimal-by-another-with-javascript)
+[19.Divide One Decimal by Another with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/divide-one-decimal-by-another-with-javascript)
 Solution
 ```js
 const quotient = 4.4 / 2; 
 ```
-[19.JavaScript Algorithms and Data Structures
+[20.JavaScript Algorithms and Data Structures
 Basic JavaScript
 Finding a Remainder in JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/finding-a-remainder-in-javascript)
 Solution
 ```js
 const remainder = 11%3;
 ```
-[20.Compound Assignment With Augmented Addition](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/compound-assignment-with-augmented-addition)
+[21.Compound Assignment With Augmented Addition](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/compound-assignment-with-augmented-addition)
 Solution
 ```js
 let a = 3;
@@ -134,7 +142,7 @@ a += 12;
 b += 9;
 c += 7;
 ```
-[21.Compound Assignment With Augmented Subtraction](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/compound-assignment-with-augmented-subtraction)
+[22.Compound Assignment With Augmented Subtraction](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/compound-assignment-with-augmented-subtraction)
 Solution
 ```js
 let a = 11;
@@ -145,7 +153,7 @@ a -= 6;
 b -= 15;
 c -= 1;
 ```
-[22.Compound Assignment With Augmented Multiplication
+[23.Compound Assignment With Augmented Multiplication
 ](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/compound-assignment-with-augmented-multiplication)
 Solution
 ```js
@@ -157,7 +165,7 @@ a *= 5;
 b *= 3;
 c *=10;
 ```
-[23.Compound Assignment With Augmented Division](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/compound-assignment-with-augmented-division)
+[24.Compound Assignment With Augmented Division](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/compound-assignment-with-augmented-division)
 Solution
 ```js
 let a = 48;
@@ -168,12 +176,33 @@ a /=12;
 b /=4;
 c /=11;
 ```
-[24.]()
+[25.]()
 Solution
 ```js
 ```
-[25.Quoting Strings with Single Quotes](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/quoting-strings-with-single-quotes)
+[26.Quoting Strings with Single Quotes](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/quoting-strings-with-single-quotes)
 Solution
 ```js
 const myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
 ```
+[27.]()
+Solution
+```js
+```
+[28.Concatenating Strings with Plus Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/concatenating-strings-with-plus-operator)
+Solution
+```js
+const myStr = 'This is the start.' + ' This is the end.'; // Change this line
+```
+[29.Concatenating Strings with the Plus Equals Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/concatenating-strings-with-the-plus-equals-operator)
+Solution
+```js
+let myStr = "This is the first sentence. ";
+myStr+= "This is the second sentence."
+```
+[30.]()
+Solution
+```js
+```
+[31.]()
+Solution
