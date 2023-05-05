@@ -254,3 +254,161 @@ const lastName = "Lovelace";
 // Only change code below this line
 const thirdLetterOfLastName = lastName[2]; // Change this line
 ```
+[37.Use Bracket Notation to Find the Last Character in a String](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-bracket-notation-to-find-the-last-character-in-a-string)
+Solution
+```js
+const lastName = "Lovelace";
+
+// Only change code below this line
+var lastLetterOfLastName = lastName[lastName.length - 1];
+```
+[38.Use Bracket Notation to Find the Nth-to-Last Character in a String](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-bracket-notation-to-find-the-nth-to-last-character-in-a-string)
+Solution
+```js
+const lastName = "Lovelace";
+
+// Only change code below this line
+const secondToLastLetterOfLastName = lastName[lastName.length-2]; // Change this line
+```
+[39.Word Blanks](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/word-blanks)
+Solution
+```js
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+
+// Only change code below this line
+var wordBlanks = "The " + myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb + "." // Change this line
+// Only change code above this line
+
+```
+[40.Store Multiple Values in one Variable using JavaScript Arrays](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/store-multiple-values-in-one-variable-using-javascript-arrays)
+Solution
+```js
+const myArray = ["",3];
+```
+[41.Nest one Array within Another Array](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/nest-one-array-within-another-array)
+Solution
+```js
+const myArray = [["Bulls", 23], ["White Sox", 45]];
+```
+[42.Access Array Data with Indexes](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/access-array-data-with-indexes)
+Solution
+```js
+
+```
+[43.Modify Array Data With Indexes](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/modify-array-data-with-indexes)
+Solution
+```js
+const myArray = [18, 64, 99];
+myArray[0]=45;
+```
+[44.Access Multi-Dimensional Arrays With Indexes](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/access-multi-dimensional-arrays-with-indexes)
+Solution
+```js
+const myArray = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [[10, 11, 12], 13, 14],
+];
+
+const myData = myArray[2][1];
+```
+[45.Manipulate Arrays With push Method](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/manipulate-arrays-with-push)
+Solution
+```js
+const myArray = [["John", 23], ["cat", 2]];
+myArray.push(["dog",3])
+```
+[46.Manipulate Arrays With pop Method](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/manipulate-arrays-with-pop)
+Solution
+```js
+const myArray = [["John", 23], ["cat", 2]];
+var removedFromMyArray = myArray.pop();
+```
+[47.Manipulate Arrays With shift Method](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/manipulate-arrays-with-shift)
+Solution
+```js
+const myArray = [["John", 23], ["dog", 3]];
+var removedFromMyArray = myArray.shift();
+```
+[48.Manipulate Arrays With unshift Method](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/manipulate-arrays-with-unshift)
+Solution
+```js
+const myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+myArray.unshift(["Paul",35]);
+```
+[49.Shopping List](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/shopping-list)
+Solution
+```js
+const myList = [
+  ["Chocolate Bar", 15],
+["Umida",20],
+["Iroda",18],
+["Vohid",18],
+["Ozoda",19]
+]
+```
+[50.Write Reusable JavaScript with Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/write-reusable-javascript-with-functions)
+Solution
+```js
+function reusableFunction(){
+  console.log("Hi World");
+}
+reusableFunction()
+```
+[51.Passing Values to Functions with Arguments](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/passing-values-to-functions-with-arguments)
+Solution
+```js
+function functionWithArgs(param1,param2){
+  console.log(param1+param2)
+}
+functionWithArgs(1,2)
+```
+[52.]()
+Solution
+```js
+```
+[53.Global Scope and Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/global-scope-and-functions)
+Solution
+```js
+let myGlobal = 10;
+
+function fun1() {
+  oopsGlobal = 5;
+}
+
+// Only change code above this line
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+```
+[54.Local Scope and Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/local-scope-and-functions)
+Solution
+```js
+function myLocalScope() {
+
+  // Only change code below this line
+  var myVar;
+  console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+
+// Run and check the console
+// myVar is not defined outside of myLocalScope
+console.log('outside myLocalScope', myVar);
+
+```
+[55.Global vs. Local Scope in Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/global-vs--local-scope-in-functions)
+Solution
+```js
