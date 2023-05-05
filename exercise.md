@@ -31,7 +31,7 @@ var a=9;
 [6.Declare String Variables](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/declare-string-variables)
 Solution
 ```js
-
+const myStr = "I am a \"double quoted\" string inside \"double quotes\"."; // Change this line
 ```
 [7.Understanding Uninitialized Variables](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/understanding-uninitialized-variables)
 Solution
@@ -412,3 +412,232 @@ console.log('outside myLocalScope', myVar);
 [55.Global vs. Local Scope in Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/global-vs--local-scope-in-functions)
 Solution
 ```js
+const outerWear = "T-Shirt";
+
+function myOutfit() {
+  // Only change code below this line
+const outerWear="sweater"
+  // Only change code above this line
+  return outerWear;
+}
+
+myOutfit();
+```
+[56.Understanding Undefined Value returned from a Function](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/understanding-undefined-value-returned-from-a-function)
+Solution
+```js
+let sum = 3;
+
+function addFive(num) {
+  sum = sum + 5;
+}
+
+// Only change code below this line
+
+
+// Only change code above this line
+
+addFive(5);
+```
+[57.Assignment with a Returned Value](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/assignment-with-a-returned-value)
+Solution
+```js
+let processed = 2;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+processed = processArg(7);
+```
+[58.Stand in Line](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/stand-in-line)
+Solution
+```js
+function nextInLine(arr, item) {
+  // Only change code below this line
+   arr.push(item);
+  const removed = arr.shift();
+  return removed;
+  // Only change code above this line
+}
+
+// Setup
+let testArr = [1, 2, 3, 4, 5];
+
+// Display code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
+```
+[59.Understanding Boolean Values](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/understanding-boolean-values)
+Solution
+```js
+function welcomeToBooleans() {
+  // Only change code below this line
+
+  return true; // Change this line
+
+  // Only change code above this line
+}
+```
+[60.Use Conditional Logic with If Statements](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-conditional-logic-with-if-statements)
+Solution
+```js
+function trueOrFalse(wasThatTrue) {
+  // Only change code below this line
+if(wasThatTrue){
+  return "Yes, that was true";
+}else{
+  return "No, that was false";
+}
+
+
+  // Only change code above this line
+
+}
+trueOrFalse(true);
+trueOrFalse(false);
+```
+[61.Comparison with the Equality Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-equality-operator)
+Solution
+```js
+function testEqual(val) {
+  if (val==12) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+testEqual(10);
+```
+[62.Comparison with the Strict Equality Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-strict-equality-operator)
+Solution
+```js
+function testStrict(val) {
+  if (val===7) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+testStrict(10);
+```
+[63.Practice comparing different values](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/practice-comparing-different-values)
+Solution
+```js
+function compareEquality(a, b) {
+  if (a === b) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+compareEquality(10, "10");
+```
+[64.Comparison with the Inequality Operator]{https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-inequality-operator}
+Solution
+```js
+function testNotEqual(val) {
+  if (val!=99) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+testNotEqual(10);
+```
+[65.Comparison with the Strict Inequality Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-strict-inequality-operator)
+Solution
+```js
+function testStrictNotEqual(val) {
+  if (val!==17) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+testStrictNotEqual(10);
+```
+[66.Comparison with the Greater Than Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-greater-than-operator)
+Solution
+```js
+function testGreaterThan(val) {
+  if (val>100) {  // Change this line
+    return "Over 100";
+  }
+
+  if (val>10) {  // Change this line
+    return "Over 10";
+  }
+
+  return "10 or Under";
+}
+
+testGreaterThan(10);
+```
+[67.Comparison with the Greater Than Or Equal To Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-greater-than-or-equal-to-operator)
+Solution
+```js
+function testGreaterOrEqual(val) {
+  if (val>=20) {  // Change this line
+    return "20 or Over";
+  }
+
+  if (val>=10) {  // Change this line
+    return "10 or Over";
+  }
+
+  return "Less than 10";
+}
+
+testGreaterOrEqual(10);
+```
+[68.Comparison with the Less Than Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-less-than-operator)
+Solution
+```js
+function testLessThan(val) {
+  if (val<25) {  // Change this line
+    return "Under 25";
+  }
+
+  if (val<55) {  // Change this line
+    return "Under 55";
+  }
+
+  return "55 or Over";
+}
+
+testLessThan(10);
+```
+[69.Comparison with the Less Than Or Equal To Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-less-than-or-equal-to-operator)
+Solution
+```js
+function testLessOrEqual(val) {
+  if (val<=12) {  // Change this line
+    return "Smaller Than or Equal to 12";
+  }
+
+  if (val<=24) {  // Change this line
+    return "Smaller Than or Equal to 24";
+  }
+
+  return "More Than 24";
+}
+
+testLessOrEqual(10);
+```
+[70.Comparisons with the Logical And Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparisons-with-the-logical-and-operator)
+Solution
+```js
+function testLogicalAnd(val) {
+  // Only change code below this line
+
+  if (val <= 50 && val >= 25) {
+    return "Yes";
+  }
+
+  // Only change code above this line
+  return "No";
+}
+
+testLogicalAnd(10);
+```
