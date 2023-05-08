@@ -641,3 +641,226 @@ function testLogicalAnd(val) {
 
 testLogicalAnd(10);
 ```
+[71.Comparisons with the Logical Or Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparisons-with-the-logical-or-operator)
+Solution
+```js
+function testLogicalOr(val) {
+  // Only change code below this line
+
+  
+
+  if (val > 20 || val < 10) {
+    return "Outside";
+  }
+
+  // Only change code above this line
+  return "Inside";
+}
+
+testLogicalOr(15);
+```
+[72.Introducing Else Statements](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/introducing-else-statements)
+Solution
+```js
+function testElse(val) {
+  let result = "";
+  // Only change code below this line
+
+  if (val > 5) {
+    result = "Bigger than 5";
+  }
+
+  else {
+    result = "5 or Smaller";
+  }
+
+  // Only change code above this line
+  return result;
+}
+
+testElse(4);
+```
+[73.Introducing Else If Statements](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/introducing-else-if-statements)
+Solution
+```js
+function testElseIf(val) {
+  if (val > 10) {
+    return "Greater than 10";
+  }
+
+ else if (val < 5) {
+    return "Smaller than 5";
+  }
+  else{
+    return "Between 5 and 10";
+  }
+
+  
+}
+
+testElseIf(7);
+```
+[74.Logical Order in If Else Statements](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/logical-order-in-if-else-statements)
+Solution
+```js
+function orderMyLogic(val) {
+  if (val < 5) {
+    return "Less than 5";
+  } else if (val < 10) {
+    return "Less than 10";
+  } else {
+    return "Greater than or equal to 10";
+  }
+}
+```
+[75.Chaining If Else Statements](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/chaining-if-else-statements)
+Solution
+```js
+function testSize(num) {
+  // Only change code below this line
+if(num<5){
+  return "Tiny"
+}else if (num<10){
+  return "Small"
+}else if (num<15){
+  return "Medium"
+}else if (num<20){
+  return "Large"
+}else if(num>=20){
+  return "Huge"
+}
+
+  return "Change Me";
+  // Only change code above this line
+}
+
+testSize(7);
+```
+[76.Golf Code](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/golf-code)
+Solution
+```js
+const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+  // Only change code below this line
+if(strokes==1){
+  return "Hole-in-one!"
+}else if(strokes<=par-2){
+  return "Eagle"
+}else if(strokes==par-1){
+  return "Birdie"
+}else if (strokes==par){
+  return "Par"
+}else if (strokes==par+1){
+  return "Bogey"
+}else if (strokes==par+2){
+  return "Double Bogey"
+}
+else if (strokes>=par+3){
+  return "Go Home!"
+}
+  return "Change Me";
+  // Only change code above this line
+}
+
+golfScore(5, 4);
+```
+[77.Selecting from Many Options with Switch Statements](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/selecting-from-many-options-with-switch-statements)
+Solution
+```js
+function caseInSwitch(val) {
+  let answer = "";
+  // Only change code below this line
+switch(val){
+  case 1:
+  answer="alpha"
+  break;
+}
+switch(val){
+  case 2:
+  answer="beta"
+  break;
+}
+switch(val){
+  case 3:
+  answer="gamma"
+  break;
+}
+switch(val){
+  case 4:
+  answer="delta"
+  break;
+}
+
+
+
+  // Only change code above this line
+  return answer;
+}
+
+caseInSwitch(1);
+```
+[78.Adding a Default Option in Switch Statements](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/adding-a-default-option-in-switch-statements)
+Solution
+```js
+function switchOfStuff(val) {
+  let answer = "";
+  // Only change code below this line
+ switch(val){
+   case"a":
+   answer= "apple";
+   break;
+   case"b":
+   answer= "bird";
+   break;
+   case"c":
+   answer= "cat";
+   break;
+   default:
+   answer="stuff";
+ }
+ ```
+ [79.Multiple Identical Options in Switch Statements](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/multiple-identical-options-in-switch-statements)
+ Solution
+ ```js
+ function sequentialSizes(val) {
+  let answer = "";
+  // Only change code below this line
+switch(val){
+  case 1:
+  case 2:
+  case 3:
+    return "Low";
+    break;
+  case 4:
+  case 5:
+  case 6:
+    return "Mid";
+    break;
+  case 7:
+  case 8:
+  case 9:
+    return "High";
+    break;
+}
+
+
+  // Only change code above this line
+  return answer;
+}
+
+sequentialSizes(1);
+```
+[80.Replacing If Else Chains with Switch](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/replacing-if-else-chains-with-switch)
+Solution
+```js
+function abTest(a, b) {
+  if (a < 0 || b < 0) {
+    return undefined;
+  }
+  else {
+    return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+  }
+}
+abTest(2, 2);
+```
